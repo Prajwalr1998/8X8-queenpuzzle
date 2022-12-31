@@ -1,0 +1,23 @@
+public class ChessBoard {
+    
+    public static void main(String[] args) {
+        int[][] board = new int[8][8];
+ 
+        // Queen's position
+        int[] queen = {0, 2, 5, 7, 3, 1, 6, 4};
+ 
+        // Place Queens in the chess board
+        for (int i = 0; i < 8; i++) {
+            board[i][queen[i]] = 1;
+        }
+ 
+        // Print the chess board
+        System.out.println("8X8 Chess Board with 8 Queens:");
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 8; j++) {
+                System.out.print(board[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
